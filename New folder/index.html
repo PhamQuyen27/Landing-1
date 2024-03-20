@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./New folder/images/nntd.png" type="image/x-icon">
+    <title>Chiến Hồn Tam Quốc</title>
+
+    <link rel="stylesheet" href="./New folder/css/style.css">
+</head>
+
+<body id="body">
+    <div class ="gc-19">
+        <!-- Tab 1 -->
+        <div class="tab-1">
+            <div class = "background">
+                <video class="desk" width="100%" playsinline loop muted autoplay>
+                    <source src="./New folder/videos/tab1.mp4" loop autoplay>
+                </video>
+                <video class="mobi" width="100%" playsinline loop muted autoplay>
+                    <source src="./New folder/videos/tab1-mobi.mp4" loop autoplay>
+                </video>
+            </div>
+            <div class="content-tab1" id="count-down">
+                <div class="item-tab1">
+                    <div class="time">
+                        <p class="number" id="ngay"></p>
+                        <p class="text">Ngày</p>
+                    </div>
+                </div>
+                <div class="item-tab1">
+                    <div class="time">
+                        <p class ="number" id="gio"></p>
+                        <p class = "text">Giờ</p>
+                    </div>
+                </div>
+                <div class="item-tab1">
+                    <div class="time">
+                        <p class="number" id="phut"></p>
+                        <p class="text">Phút</p>
+                    </div>
+                </div>
+                <div class="item-tab1">
+                    <div class="time">
+                        <p class="number" id="giay"></p>
+                        <p class="text">Giây</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Tab 1 -->
+        <!-- Tab 2 -->
+        <div class="tab-2">
+            <div class="title col-md-3 col-10">
+                <img src="./New folder/images/title-tab2.png" width="100%">
+            </div>
+            <div class="content-tab2 col-md-7 col-12">
+                <img src="./New folder/images/bg-content-tab2.png" width="100%" alt="">
+            </div>
+            <div class="rank-point col-md-6 col-11">
+                <div class="background">
+                    <img src="./New folder/images/bg-thanh-chay.png" width="100%" alt="">
+                </div>
+                <div class="mocs moc-1">
+                    <div class="icon">
+                        <img src="https://cdn.gzone.tech/gc19/landing2024-01-16/publics/images/point-def.png"
+                            width="100%" alt="" class="def">
+                        <img src="https://cdn.gzone.tech/gc19/landing2024-01-16/publics/images/point-act.png"
+                            width="100%" alt="" class="act">
+                    </div>
+                    <div class="moc"> 
+                        <img src="./New folder/images/moc-100k.png" width="100%" alt="">
+                    </div>  
+                </div>
+                <div class="mocs moc-2">
+                    <div class="icon">
+                        <img src="https://cdn.gzone.tech/gc19/landing2024-01-16/publics/images/point-def.png"
+                            width="100%" alt="" class="def">
+                        <img src="https://cdn.gzone.tech/gc19/landing2024-01-16/publics/images/point-act.png"
+                            width="100%" alt="" class="act">
+                    </div>
+                    <div class="moc"> 
+                        <img src="./New folder/images/moc-200k.png" width= "100%" alt="">
+                    </div>
+                </div>
+                <div class="mocs moc-3">
+                    <div class="icon">
+                        <img src="https://cdn.gzone.tech/gc19/landing2024-01-16/publics/images/point-def.png"
+                            width="100%" alt="" class="def">
+                        <img src="https://cdn.gzone.tech/gc19/landing2024-01-16/publics/images/point-act.png"
+                            width="100%" alt="" class="act">
+                    </div>
+                    <div class="moc"> 
+                        <img src="./New folder/images/moc-500k.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="btn">
+                    <img src="./New folder/images/btn-bao-danh.png" width="100%" alt="" onclick="click()">
+                </div>
+                <div class="count-user">
+                    <p>Hiện đã có <span id="count-user">0</span> người báo danh</p>
+                </div>
+            </div>
+        </div>
+        <!-- END Tab 2 -->
+        <!-- Tab 3 -->
+        <div class="tab-3">
+            <div class="title col-md-3 col-10">
+                <img src="./New folder/images/title-tab3.png" width ="100%" alt="">
+            </div>
+            <div class="content-tab3">
+                <div class="tab3-left"> 
+                    <div class="def-gift">
+                        <img src="./New folder/images/xin-que-v1.png" width="100%" alt="">
+                    </div>
+                    <div class="active-gift act">
+                        <img src="New folder/videos/xin-quẻ.gif" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="tab3-right">
+                    <div class="background">
+                        <img src="New folder/images/bg-content-tab3.png" width="100%" alt="">
+                    </div>
+                    <div class="the-le" onclick="opened_box('.popup-the-le-reo-que')" id ="the-le-reo-que">
+                        <img src="New folder/images/bg-content-tab3-v1.png" width="100%" alt="">
+                    </div>
+                    <div class="list-user">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide text-item">
+                                    <p>Chúc mừng bạn đã nhận được 1</p>
+                                </div>
+                                <div class="swiper-slide text-item">
+                                    <p>Chúc mừng bạn đã nhận được 2</p>
+                                </div>
+                                <div class="swiper-slide text-item">
+                                    <p>Chúc mừng bạn đã nhận được 3</p>
+                                </div>
+                                <div class="swiper-slide text-item">
+                                    <p>Chúc mừng bạn đã nhận được 4</p>
+                                </div>
+                                <div class="swiper-slide text-item">
+                                    <p>Chúc mừng bạn đã nhận được 5</p>
+                                </div>
+                                <div class="swiper-slide text-item">
+                                    <p>Chúc mừng bạn đã nhận được 6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-tab3">
+                        <div class="lac-que">
+                            <img src="New folder/images/btn-lac-que.png" width="100%" alt="">
+                        </div>
+                        <div class="que-cua-ban">
+                            <img src="New folder/images/btn-que-cua-ban.png" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Tab 3 -->
+        <!-- Tab 4 -->
+
+        <div class="tab-4">
+            <div class="title col-md-3 col 10">
+                <img src="New folder/images/title-tab4.png" width="100%" alt="">
+            </div>
+            <div class="list-g">
+                <div class="bg">
+                    <img src="New folder/images/bg-thong-bao-tab4.png" width="100%" alt="">
+                </div>
+                <div class="list-gift-item">
+                    <div class="swiper mySwiperTab4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide text-item">
+                                <p>Chúc mừng bạn đã nhận được 1</p>
+                            </div>
+                            <div class="swiper-slide text-item">
+                                <p>Chúc mừng bạn đã nhận được 2</p>
+                            </div>
+                            <div class="swiper-slide text-item">
+                                <p>Chúc mừng bạn đã nhận được 3</p>
+                            </div>
+                            <div class="swiper-slide text-item">
+                                <p>Chúc mừng bạn đã nhận được 4</p>
+                            </div>
+                            <div class="swiper-slide text-item">
+                                <p>Chúc mừng bạn đã nhận được 5</p>
+                            </div>
+                            <div class="swiper-slide text-item">
+                                <p>Chúc mừng bạn đã nhận được 6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-tab4">
+                <div class="bg">
+                    <img src="New folder/images/cay.png" width="100%" alt="">
+                </div>
+                <div class="tab4-gift-left">
+                    <img src="New folder/images/gift-tab4.png" width="100%" alt="">
+                </div>
+                <div class="tab4-gift-right">
+                    <img src="New folder/images/gift-tab4.png" width="100%" alt="">
+                </div>
+            </div>
+            <div class="tab4-btn v1">
+                <div class="nhan-luot" id="nhan-luot">
+                    <img src="New folder/images/btn-nhan-luot-def.png" width="100%" alt="" class="default">
+                    <img src="New folder/images/btn-nhan-luot-act.png" width="100%" alt="" class="active">
+                </div>
+                <div class="nhan-luot" id="gc">
+                    <img src="New folder/images/gc-def.png" width="100%" alt="" class="default">
+                    <img src="New folder/images/gc-act.png" width="100%" alt="" class="active">
+                </div>
+            </div>
+            <div class="tab4-btn v2">
+                <div class="nhan-luot" id="the-le">
+                    <img src="New folder/images/btn-the-le-def.png" width="100%" alt="" class="default">
+                    <img src="New folder/images/btn-the-le-act.png" width="100%" alt="" class="active">
+                </div>
+                <div class="nhan-luot" id="lich-su">
+                    <img src="New folder/images/btn-lich-su-def.png" width="100%" alt="" class="default">
+                    <img src="New folder/images/btn-lich-su-act.png" width="100%" alt="" class="active">
+                </div>
+            </div>
+            <div class="rung-cay col-md-2 col-7" id="rung-cay">
+                <img src="New folder/images/btn-rung-cay.png" width="100%">
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="container">
+                <div class="logo">
+                    <img src="https://cdn.gzone.tech/gc19/landing2023-12-18/publics/images/logo-footer.png" width="100%" class="col-md-12 col-3" alt="">
+                    <img src="https://cdn.gzone.tech/gc19/landing2023-12-18/publics/images/warning-footer.png" width="100%" class="warning-mobile col-lg-3 col-1" alt="">
+                </div>
+                <div class="content col-md-8 col-15">
+                    <div class="link">
+                        <a href="#">About Gzone |</a>
+                        <a href="#">Điều khoản |</a>
+                        <a href="#">Tài khoản |</a>
+                        <a href="#">Nạp thẻ |</a>
+                        <a href="#">Hỗ trợ KH</a>
+                    <p>
+                        Bản quyền © 2020 Gzone <br>
+                        Email: Hotro@Gzone.vn | Hotline: 1900 088 885 <br>
+                        Thời gian: 8:00 - 22:00 tất cả các ngày (GMT + 7) <br>
+                        Giấy phép G1 số: 2201/QĐ-BTTTT cấp ngày 10/11/2023<br>
+                        Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe <br>
+                        Chịu trách nhiệm nội dung: Ông Bùi Đức Hồng <br>
+                    </p>
+                </div>
+                <div class="warning-desk">
+                    <img src="https://cdn.gzone.tech/gc19/landing2023-12-18/publics/images/warning-footer.png"
+                        width="100%" alt="">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- POP UP -->
+    <div class="pop-up" id="pop-up">
+        <div class="bg-popup" id="bg-popup"></div>
+        <div class="content-popup col-md-5 col-9">
+            <!-- Thể lệ gieo que-->
+            <div class="item-popup-tlrq popup-the-le-reo-que" id="item-popup">
+                <div class="bg">
+                    <img src="New folder/images/background-popup-the-le.png" width="100%" alt="">
+                </div>
+                <div class="content gieo-que-popup">
+                    <p>- Gieo quẻ đầu năm để xem vận số năm mới và nhận thêm nhiều quà may mắn nhé!</p><br>
+                    <p>- Mỗi ngày bạn có 1 lượt Gieo Quẻ.</p>
+                </div>
+            </div>
+
+            <!-- Nhận lượt -->
+            <div class="item-popup-nl popup-nhan-luot" id="item-popup">
+                <div class="bg">
+                    <img src="New folder/images/background-popup-them-luot.png" width="100%" alt="">
+                </div>
+                <div class="content nhanluot-popup">
+                    <p class="title">Số lượt rung cây bạn có là 01 lượt</p><br>
+                    <div class="group">
+                        <p>Báo danh: + 5 lượt (toàn sự kiện)</p>
+                        <div class="btn-themluot">
+                            <img src="New folder/images/btn-tham-gia.png" width="100%"  class="def">
+                            <img src="New folder/images/btn-tham-gia-act.png" width="100%" class="act">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <p>Chia sẻ Landing: + 5 lượt (mỗi ngày)</p>
+                        <div class="btn-themluot">
+                            <img src="New folder/images/btn-tham-gia.png" width="100%"  class="def">
+                            <img src="New folder/images/btn-tham-gia-act.png" width="100%" class="act">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <p>Mời bạn bè: + 1 lượt (mỗi người/tối đa 5 lượt 1 ngày)</p>
+                        <div class="btn-themluot">
+                            <img src="New folder/images/btn-copy-link.png" width="100%"  class="def">
+                            <img src="New folder/images/btn-copy-link-act.png" width="100%" class="act">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Giftcode -->
+            <div class="item-popup-gc popup-gc" id="item-popup">
+                <div class="bg">
+                    <img src="New folder/images/background-popup-thong-bao.png" width="100%" alt="">
+                </div>
+                <div class="content gc-popup">
+                    <div class="title">Mời bạn chọn game:</div>
+                    <div class="list-game">
+                        <div class="item-group">
+                            <div class="group-game">
+                                <img src="New folder/images/mmg.png" width="100%" alt="">
+                            </div>
+                            <div class="group-game">
+                                <img src="New folder/images/vqas.png" width="100%" alt="">
+                            </div>
+                            <div class="group-game">
+                                <img src="New folder/images/tmtq.png" width="100%" alt="">
+                            </div>
+                        </div>
+                        <div class="item-group">
+                            <div class="group-game">
+                                <img src="New folder/images/dtkl.png" width="100%" alt="">
+                            </div>
+                            <div class="group-game">
+                                <img src="New folder/images/vmth.png" width="100%" alt="">
+                            </div>
+                            <div class="group-game">
+                                <img src="New folder/images/dhtt.png" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thể lệ -->
+            <div class="item-popup-tl popup-the-le">
+                <div class="bg">
+                    <img src="New folder/images/background-popup-thong-bao.png" width="100%" alt="">
+                </div>
+                <div class="content thele-popup">
+                    <p class="title">SỰ KIỆN "RUNG CÂY HÁI LỘC"</p>
+                    <p class="time"><b>Thời gian sự kiện:</b> Từ 05/02/2024 - 15/2/2024</p>
+                    <b>Thể lệ:</b>
+                    <p>
+                        - Hoàn thành các nhiệm vụ để Nhận lượt Rung Cây
+                    </p>
+                    <p>
+                        - Rung Cây sẽ có cơ hội may mắn nhận phần thưởng
+                    </p>
+                    <p>
+                        - Phần thưởng gồm giftcode và thẻ GZcard
+                    </p>
+                    <p>
+                        - Sau khi quay ra thưởng có thể đổi quà ở mục "Đổi Thưởng"
+                    </p>
+                    <b>Lưu ý:</b>
+                    <p>- Đổi thưởng trong thời gian sự kiện. Sau khi kết thúc landing sẽ đóng và không thể đổi nữa</p>
+                    <p>- Các hành động lợi dụng lỗ hổng (bug) của sự kiện đều bị nghiêm cấm. Một khi bị phát hiện sẽ hủy
+                        bỏ quyền tham gia sự kiện cùng với mọi kết quả trước đó</p>
+                </div>
+            </div>                              
+
+            <!-- Lịch sử -->
+            <div class="item-popup-ls popup-lich-su" id="item-popup">
+                <div class="bg">
+                    <img src="New folder/images/background-popup-lich-su.png" width="100%" alt="">
+                </div>
+                <div class="content lichsu-popup">
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Lịch sử</th>
+                                </tr>
+                                <tr>
+                                    <td>STT</td>
+                                    <td>Tên Quà tặng</td>
+                                    <td>Thời gian</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cốc Giữ Nhiệt Nhất Niệm</td>
+                                    <td>14/12/2003 19:00:00</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Cốc Giữ Nhiệt Nhất Niệm</td>
+                                    <td>14/12/2003 19:00:00</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cốc Giữ Nhiệt Nhất Niệm</td>
+                                    <td>14/12/2003 19:00:00</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Cốc Giữ Nhiệt Nhất Niệm</td>
+                                    <td>14/12/2003 19:00:00</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Cốc Giữ Nhiệt Nhất Niệm</td>
+                                    <td>14/12/2003 19:00:00</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Cốc Giữ Nhiệt Nhất Niệm</td>
+                                    <td>14/12/2003 19:00:00</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Cốc Giữ Nhiệt Nhất Niệm</td>
+                                    <td>14/12/2003 19:00:00</td>
+                                </tr>
+                                <tr><td>8</td>
+                                    <td>Cốc Giữ Nhiệt Nhất Niệm</td>
+                                    <td>14/12/2003 19:00:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css”>
+    <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js”></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js”></script>
+    <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Countdown 
+        var countDownDate = new Date ("March 10, 2024 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance/(1000 * 60 * 60 * 24));
+            var hour = Math.floor((distance %(1000 * 60 * 60 * 24)) / (1000 * 60 *60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("ngay").innerHTML = days;
+            document.getElementById("gio").innerHTML = hour;
+            document.getElementById("phut").innerHTML = minutes;
+            document.getElementById("giay").innerHTML = seconds;
+
+            if (distance < 0){
+                clearInterval(x);
+                document.getElementById("count-down").style.opacity = 0;
+            }
+        },1000);
+
+        // Swiper
+        var swiper_tab4 = new Swiper (".mySwiper",{
+            spaceBetween: 5,
+            loop: true,
+            direction: "Vertical",
+            centeredSlides: true,
+            slidePerView: 4,
+            autoplay:{
+                delay: 1000,
+                disableInteraction: false,
+            } ,
+        });
+
+        var swiper = new Swiper (".mySwiperTab4",{
+            spaceBetween: 5,
+            loop: true,
+            direction: "Vertical",
+            centeredSlides: true,
+            slidePerView: 4,
+            autoplay: {
+                delay: 1000,
+                disableInteraction: false,
+            },
+        });
+
+        // pop-up
+        // thể lệ reo quẻ
+        var a = document.getElementById('the-le-reo-que')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'block';
+            var x = document.querySelector(".item-popup-tlrq");
+            x.style.display = 'block';
+            var x = document.querySelector("body");
+            x.style.overflow = 'hidden';
+        });
+
+        var a = document.getElementById('bg-popup')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'none';
+            var x = document.querySelector(".item-popup-tlrq");
+            x.style.display = 'none';
+            var x = document.querySelector("body");
+            x.style.overflow = 'visible';
+        });
+
+        
+
+        // thể lệ
+        var a = document.getElementById('the-le')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'block';
+            var x = document.querySelector(".item-popup-tl");
+            x.style.display = 'block';
+            var x = document.querySelector("body");
+            x.style.overflow = 'hidden';
+        });
+
+        var a = document.getElementById('bg-popup')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'none';
+            var x = document.querySelector(".item-popup-tl");
+            x.style.display = 'none';
+            var x = document.querySelector("body");
+            x.style.overflow = 'visible';
+        });
+
+        // var openButton = document.getElementById('the-le-reo-que');
+        // openButton.addEventListener('click', function () {
+        // var popup = document.querySelector(".pop-up");
+        // var itemPopup = document.querySelector(".item-popup-tlrq");
+
+        // popup.style.display = 'block';
+        // itemPopup.classList.add('active');
+
+        // var body = document.querySelector("body");
+        // body.style.overflow = 'hidden';
+        // });
+
+        // var closeButton = document.getElementById('bg-popup');
+        // closeButton.addEventListener('click', function () {
+        // var popup = document.querySelector(".pop-up");
+        // var itemPopup = document.querySelector(".item-popup-tlrq");
+
+        // popup.style.display = 'none';
+        // itemPopup.classList.remove('active');
+
+        // var body = document.querySelector("body");
+        // body.style.overflow = 'visible';
+        // });
+
+        // giftcode
+        var a = document.getElementById('gc')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'block';
+            var x = document.querySelector(".item-popup-gc");
+            x.style.display = 'block';
+            var x = document.querySelector("body");
+            x.style.overflow = 'hidden';
+        });
+
+        var a = document.getElementById('bg-popup')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'none';
+            var x = document.querySelector(".item-popup-gc");
+            x.style.display = 'none';
+            var x = document.querySelector("body");
+            x.style.overflow = 'visible';
+        });
+
+        // thêm lượt
+        var a = document.getElementById('nhan-luot')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'block';
+            var x = document.querySelector(".item-popup-nl");
+            x.style.display = 'block';
+            var x = document.querySelector("body");
+            x.style.overflow = 'hidden';
+        });
+
+        var a = document.getElementById('bg-popup')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'none';
+            var x = document.querySelector(".item-popup-nl");
+            x.style.display = 'none';
+            var x = document.querySelector("body");
+            x.style.overflow = 'visible';
+        });
+
+        //lịch sử
+        var a = document.getElementById('lich-su')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'block';
+            var x = document.querySelector(".item-popup-ls");
+            x.style.display = 'block';
+            var x = document.querySelector("body");
+            x.style.overflow = 'hidden';
+        });
+
+        var a = document.getElementById('bg-popup')
+        a.addEventListener('click',function(){
+            var x = document.querySelector(".pop-up");
+            x.style.display = 'none';
+            var x = document.querySelector(".item-popup-ls");
+            x.style.display = 'none';
+            var x = document.querySelector("body");
+            x.style.overflow = 'visible';
+        });
+
+        // lắc quẻ
+        var tab3_left = document.querySelector('.lac-que');
+        var tab3_left_def = document.querySelector(".def-gift");
+        var tab3_left_act = document.querySelector(".active-gift");
+        tab3_left.addEventListener('click', function (){
+            tab3_left_act.classList.remove('act')
+            tab3_left_act.classList.add('act-gift')
+            tab3_left_def.style.opacity = 0;
+
+            setTimeout(function (){
+                tab3_left_act.classList.remove("act-gift")
+                tab3_left_act.classList.add('act')
+                tab3_left_def.style.opacity = 1;
+            },2000)
+        })
+    </script>
+    
+</body>
+</html>
