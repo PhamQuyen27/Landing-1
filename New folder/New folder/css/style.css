@@ -68,7 +68,7 @@ body{
 
 .tab-1 .content-tab1 .item-tab1 .number{
     color: #F5E2C2;
-    font-family: 'pataya';
+    font-family: 'pattaya';
     font-size: 3vw;
     text-align: center;
     background-color: black;
@@ -76,7 +76,7 @@ body{
 }
 .tab-1 .content-tab1 .item-tab1 .text{
     color: #F5E2C2;
-    font-family: 'pataya';
+    font-family: 'pattaya';
     font-size: 2vw;
     text-align: center;
     font-weight: bold;
@@ -328,7 +328,7 @@ body{
 }
 
 .tab-3 .list-user .text-item p{
-    font-family: "pataya" ;
+    font-family: 'pattaya';
     font-size: 1.2vw;
 }
 
@@ -385,6 +385,7 @@ body{
     .tab-3 .list-user .text-item p{
         font-size: 3.5vw;
     }
+
     .tab-3 .content-tab3 .tab3-right .the-le{
         width: 33%;
         top: 2%;
@@ -421,60 +422,81 @@ body{
     margin-right: auto;
 }
 
-
-.mySwiperTab4 .swiper-slide{
-    margin-top: 5px !important;
-}
-
 .tab-4 .list-g{
     position: absolute;
     top: 19%;
-    right: 13%;
+    right: 17%;
     width: 22vw;
+    height: 20vw;
+}
+
+.tab-4 .list-g .bg{
+    width: 100%;
+    right: 20%;
 }
 
 .tab-4 .list-gift-item{
     position: absolute;
-    top: 40%;
-    left: 22%;
-    width: 59%;
-    height: 40%;
+    top: 33%;
+    left: 40%;
+    width: 62%;
+    height: 50%;
     /* z-index: 15; */
-    overflow: hidden;
+    overflow: auto;
+}
+
+.tab-4 .list-gift-item::-webkit-scrollbar{
+    display: none;
+}
+
+.tab-4 .swiper {
+    width: 100%;
+    height: 100%;   
+} 
+
+.mySwiperTab4 .swiper-slide{
+    margin-bottom: 25px !important;
 }
 
 .tab-4 .list-gift-item .text-item{
     margin: 0.8vw 0;
-    /* text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .tab-4 .list-gift-item .text-item p{
-    font-family: 'pataya';
+    font-family: 'pattaya';
     font-size: 1.0vw;
     color: #CA3624;
 }
 
 .tab-4 .content-tab4{
     position: relative;
-    width: 65%;
+    width: 100%;
     /* z-index: 10; */
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto  !important;
+    display: flex;
 }
 
-.tab4 .swiper {
-    width: 100%;
-    height: 100%;   
-} 
+.tab-4 .lottie{
+    width: 38%;
+    margin-left: 30vw;
+}
 
+.tab-4 .content-tab4 .lottie{
+    visibility: hidden;
+    z-index: 20;
+}
+
+.tab-4 .bg{
+    position: absolute;
+    width: 65%;
+    left: 17%;
+}
 .tab-4 .tab4-gift-left{
     position: absolute;
-    width: 15%;
-    top: 60%;
-    left: 15%;
+    top: 70%;
+    left: 26%;
+    width: 10%;
 }
 
 .tab-4 .tab4-btn{
@@ -483,24 +505,24 @@ body{
 
 .tab-4 .tab4-gift-right{
     position: absolute;
-    width: 15%;
-    top: 60%;
-    right: 17%;
+    width: 10%;
+    top: 70%;
+    right: 29%;
 }
 
 .tab-4 .tab4-btn.v1{
     position: absolute;
     max-width: 8%;
     /* z-index: 99; */
-    top: 15%;
-    left: 20%;
+    top: 13%;
+    left: 19%;
 }
 
 .tab-4 .tab4-btn.v2{
     position: absolute;
     max-width: 8%;
     /* z-index: 99; */
-    top: 22%;
+    top: 21%;
     left: 26%;
 }
 
@@ -508,6 +530,7 @@ body{
     position: relative;
     margin-top: 1.5vw;
     cursor: pointer;
+
 }
 
 .tab-4 .tab4-btn .nhan-luot img.active{
@@ -531,14 +554,13 @@ body{
     opacity: 1;
 }
 
-
-
 .tab-4 .rung-cay{
     position: relative;
     margin-left: auto;
     margin-right: auto;
     max-width: 18%;
-    margin-top: 3vw;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
 }
 
 .tab-4 .rung-cay:hover{
@@ -552,44 +574,69 @@ body{
     .tab-4{
         margin-top: 20vw;
     }
+
     .tab-4 .title{
         width: 75%;
     }
-    .tab-4 .list-g{
-        position: relative;
-        width: 45%;
-        top: 25%;
-        right: -27%;
-    }
 
+    .tab-4 .list-g{
+        position: absolute;
+        width:50%;
+        height: 50%;
+        top: 10%;
+        right: 30%;
+    }
+    .tab-4 .content-tab4 .bg{
+        margin-top: 5vw;
+    }
     .tab-4 .list-gift-item{
-        top: 30%;
+        top: 16%;
         width: 59%;
-        height: 43%;
+        height: 24%;
+        left: 29%;
     }
 
     .tab-4 .list-gift-item .text-item p{
-        font-family: 'pataya';
         font-size: 3vw;
     }
     .tab-4 .content-tab4{
         width: 100%;
+        margin-top: 50vw;
     }
 
+    .tab-4 .lottie{
+        width: 55%;
+        margin-left: 25vw;
+        margin-top: 5vw;
+    }
+
+    .tab-4 .bg{
+        width: 95%;
+        left: 5%;
+    }
     .tab-4 .tab4-btn.v1{
         position: relative;
         display: flex;
         max-width: 50%;
-        /* z-index: 99; */
+        margin-top: 20vw;;
         left: 0%;
     }
+    .tab-4 .tab4-gift-left{
+        top: 72%;
+        width: 15%;
+        left: 18%;
+    }
 
+    .tab-4 .tab4-gift-right{
+        top: 72%;
+        width: 15%;
+        right: 16%;
+    }
     .tab-4 .tab4-btn.v2{
         position: absolute;
         display: flex;
         max-width: 50%;
-        /* z-index: 99; */
-        top: 73%;
+        top: 75%;
         left: 50%;
     }
 
@@ -691,67 +738,6 @@ body{
 }
 
 /* popup */
-/* .pop-up{
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -9995;
-    display: flex;
-    align-items: center;
-    opacity: 1;
-}
-
-.pop-up .bg-popup {
-    position: fixed;
-    top: 0 ;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    z-index: -9996;
-}
-
-.content-popup{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-}
-
-.item-popup{
-    position: absolute;     
-    width: 100%;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.pop-up .item-popup .content{
-    position: absolute;
-    top: 49%;
-    left: 30%;
-    color: #63463f;
-    overflow: auto;
-}
-
-.pop-up .item-popup .content p{
-    font-size: 1.1vw;
-    font-family: 'exo';
-    text-align: center;
-    font-weight: bold;
-    z-index: 100;
-} */
-
-
 .pop-up{
     /* display: none; */
     position: fixed;
@@ -788,21 +774,28 @@ body{
 /* thể lệ reo quẻ */
 .content-popup .item-popup-tlrq{
     display: none;
-    
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
 .content-popup .item-popup-tlrq .bg{
     position: absolute;
+    /* top: 19%;
+    bottom: auto;
+    transform: scale(1); */
     height: 100%;
     width: 100%;
 }
 
 .content-popup .item-popup-tlrq .bg img{
     height: 100%;
+    object-fit: contain;
 }
 .content-popup .item-popup-tlrq .content{
     position: absolute;
-    top: 40%;
-    left: 5%;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     font-size: 1vw;
     color: #63463f;
     width: 90%;
@@ -814,6 +807,7 @@ body{
 /* giftcode */
 .content-popup .item-popup-gc{
     display: none;
+    object-fit: contain;
 }
 
 .content-popup .item-popup-gc .bg{
@@ -824,14 +818,16 @@ body{
 
 .content-popup .item-popup-gc .bg img{
     height: 100%;
+    object-fit: contain;
 }
 .content-popup .item-popup-gc .content{
     position: absolute;
-    top: 30%;
-    left: 5%;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 80%; 
     font-size: 1vw;
     color: #63463f;
-    width: 90%;
     text-align: center;
     font-family: 'exo';
     font-weight: 600;
@@ -866,12 +862,14 @@ body{
 
 .content-popup .item-popup-tl .bg img{
     height: 100%;
+    object-fit: contain;
 }
 
 .content-popup .item-popup-tl .content{
     position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     font-size: 0.9vw;
     color: #63463f;
     width: 90%;
@@ -888,13 +886,13 @@ body{
 }
 
 .content-popup .item-popup-tl .content b{
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 .content-popup .item-popup-tl .content .title{
     text-align: center;
     top: 15%;
     font-weight: 600;
-    font-weight: 1vw;
+    font-size: 1.4vw;
     margin-bottom: 1.5vw;
 }
 
@@ -914,12 +912,14 @@ body{
 
 .content-popup .item-popup-nl .bg img{
     height: 100%;
+    object-fit: contain;
 }
 
 .content-popup .item-popup-nl .content{
     position: absolute;
-    top: 30%;
-    left: 5%;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     font-size: 1vw;
     color: #63463f;
     width: 90%;
@@ -982,6 +982,7 @@ body{
 /* lịch sử */
 .content-popup .item-popup-ls{
     display: none;
+    overflow: auto;
 }
 
 .content-popup .item-popup-ls .bg{
@@ -992,17 +993,24 @@ body{
 
 .content-popup .item-popup-ls .bg img{
     height: 100%;
+    object-fit: contain;
 }
 .content-popup .item-popup-ls .content{
     position: absolute;
-    top: 17%;
-    left: 15%;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     font-size: 0.8vw;
     color: black;
-    width: 90%;
+    width: 80%;
+    max-height: 60%;
     text-align: center;
     font-family: 'exo';
+    overflow: scroll;
+}
 
+.content-popup .item-popup-ls .content::-webkit-scrollbar{
+    display: none;
 }
 
 th, td{
@@ -1033,9 +1041,12 @@ tbody td{
     font-weight: 500;
 }
 
-table{
+.content-popup .item-popup-ls table{
     border-collapse:collapse;
-    width:80%;
+    width: 100%;
+    max-width: 100%;
+    transform: scale(0.9, 0.9);
+
 }
 
 @media(max-width:767px){
@@ -1045,12 +1056,16 @@ table{
         top: 30%;
     }
 
-    .content-popup .item-popup-tlgc .content{
-        font-size: 3vw;
+    .content-popup .item-popup-tlrq .content{
+        font-size: 5vw;
     }
 
     .content-popup .item-popup-gc .content{
         font-size: 3vw;
+    }
+
+    .content-popup .item-popup-gc .list-game .item-group {
+        margin: 0.5vw 0;
     }
 
     .content-popup .item-popup-tl .content p{
@@ -1062,19 +1077,36 @@ table{
     .content-popup .item-popup-tl .content b{
         font-size: 3vw;
     } 
+    
     .content-popup .item-popup-tl .content .title{
-        font-weight: 3vw;
+        font-size: 3vw;
     }
 
     .content-popup .item-popup-nl .content{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .content-popup .item-popup-nl .content .group p{
         width: 80%;
         height: 100%;
-        font-size: 3vw;
+        font-size: 2.8vw;
         padding: 1vw;
         margin-bottom: 1vw;
         border-radius: 5px;
+    }
+
+    .content-popup .item-popup-ls .content{
+        font-size: 3vw;
+        max-height: 65%;
+        overflow: scroll;
+    }
+
+    th{
+        padding: 2vw;
+    }
+    thead td{
+        padding: 2vw;
+    }
+    tbody td{
+        padding: 2vw;
     }
 }
